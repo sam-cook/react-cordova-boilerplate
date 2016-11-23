@@ -1,7 +1,7 @@
 {
-  "name": "react-cordova",
+  "name": "react-cordova-boilerplate",
   "version": "0.1.0",
-  "homepage": "https://github.com/sam-cook/react-cordova",
+  "homepage": "https://github.com/sam-cook/react-cordova-boilerplate",
   "description": "ES6 Isomorphic React app using React.js, React Router, Redux, Webpack and Cordova.",
   "authors": [
     "Sam Cook"
@@ -15,7 +15,7 @@
     "cordova"
   ],
   "author": "Sam Cook",
-  "main": "app/index.jsx",
+  "main": "app/welcome.js",
   "scripts": {
     "serve": "webpack-dev-server -d --config webpack.config.development.js --content-base www/ --progress --colors --history-api-fallback",
     "build": "webpack -p --config webpack.config.production.js --profile --progress --colors",
