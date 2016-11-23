@@ -1,0 +1,65 @@
+@import 'settings';
+
+$startCol: 1;
+$endCol: 12;
+$breakPoints: (xs, $screen-xs), (sm, $screen-sm), (md, $screen-md), (lg, $screen-lg);
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-block {
+  margin: 0 auto;
+  display: block !important;
+}
+
+@each $name, $startWidth in $breakPoints {
+  @media (min-width: $startWidth) {
+
+    @each $break, $width in $breakPoints {
+      @if $break == $name {
+        .hidden-#{$break} {
+          display: none;
+        }
+
+        .visible-#{$break} {
+          display: inline-block;
+        }
+      }
+
+      @if $break != $name {
+        .hidden-#{$break} {
+          display: inline-block;
+        }
+
+        .visible-#{$break} {
+          display: none;
+        }
+      }
+    }
+
+    @for $i from $startCol through $endCol {
+      .col-#{$name}-#{$i} {
+        vertical-align: top;
+        width: (100%/$endCol) * $i;
+        display: inline-block;
+      }
+
+      .col-#{$name}-offset-#{$i} {
+        margin-left: (100%/$endCol) * $i;
+      }
+    }
+  }
+}
+
+
+.container-fluid {
+  position: relative;
+  @media(min-width: $screen-sm) {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

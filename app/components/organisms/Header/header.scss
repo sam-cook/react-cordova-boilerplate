@@ -1,0 +1,41 @@
+@import '../../../styles/settings.scss';
+
+.o-header {
+  margin-bottom: 20px;
+  background-color: $grey;
+  .logo .a-image {
+    padding: 10px;
+    max-width: 75% !important;
+    max-height: 63px;
+  }
+
+  .navigation {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 0 20px;
+        height: 43px;
+
+        @media(min-width: $screen-sm) {
+          margin-top: 24px;
+        }
+
+        &.active {
+          color: $black;
+        }
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+    }
+
+  }
+
+}

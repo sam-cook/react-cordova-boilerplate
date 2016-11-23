@@ -1,0 +1,10 @@
+@import '../../../styles/settings.scss';
+
+.a-button {
+  @include border-radius;
+  width: 100%;
+  font-size: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}

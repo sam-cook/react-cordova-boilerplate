@@ -1,0 +1,10 @@
+@import '../../../styles/settings.scss';
+
+.a-input {
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  &:focus {
+    outline: none;
+  }
+}
