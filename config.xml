@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.nova.trippr" version="0.0.1"
+<widget id="com.nova.reactCordovaBoilerplate" version="0.1.0"
   xmlns="http://www.w3.org/ns/widgets"
   xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>react-cordova</name>
+  <name>react-cordova-boilerplate</name>
   <description>
-        React Cordova Boilerplate.
+        React Cordova Boilerplate
   </description>
-  <author email="rgaidot@gmail.com" href="http://regis.gaidot.net/">
-    Régis Gaidot
+  <author email="samryancook@gmail.com" href="http://www.novawebdesigns.co.uk/">
+    Sam Cook
   </author>
   <content src="index.html"/>
   <access origin="*"/>
